@@ -1,0 +1,14 @@
+.contactFormContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactFormItem {
+    display: flex;
+    flex-direction: column;
+}
+
+.submitButton {
+    width: 200px;
+    margin: 10px auto;
+}
