@@ -6,15 +6,13 @@ import * as Yup from "yup";
 
 const FeedbackSchema = Yup.object().shape({
     name: Yup.string()
-        .matches(
-            /^[A-Za-z]+(?:\s[A-Za-z]+)+$/,
-            "Name must include first and last name with space"
-        )
-        .required("Name is required"),
+        .required("Name is required")
+        .min(3, "Too short").max(50, "Too long"),
 
     number: Yup.string()
-        .matches(/^\d{3}-\d{2}-\d{2}$/, "Phone must be in xxx-xx-xx format")
-        .required("Phone number is required"),
+        .matches(/^\d{3}-\d{2}-\d{2}$/, "Phone must be number in xxx-xx-xx format")
+        .required("Phone number is required")
+        .min(3, "Too short").max(50, "Too long"),
 });
 
 const ContactForm = ( {onAddContact}) => {
