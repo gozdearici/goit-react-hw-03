@@ -39,7 +39,7 @@ const ContactForm = ( {onAddContact}) => {
                     <div className={css.contactFormItem}>
                         <label htmlFor={nameFieldId}>Name</label>
                         <Field type="text" id={nameFieldId} name="name" />
-                        <ErrorMessage name="name" component="span" />
+                        <ErrorMessage className={css.errorMessage} name="name" component="span" />
                     </div>
                     <div className={css.contactFormItem}>
                         <label htmlFor={numberlFieldId}>Phone</label>
@@ -49,7 +49,7 @@ const ContactForm = ( {onAddContact}) => {
                             type="tel"
                             inputMode="numeric"
                         />
-                        <ErrorMessage name="number" component="span" />
+                        <ErrorMessage className={css.errorMessage} name="number" component="span" />
                     </div>
 
                     <button className={css.submitButton} type="submit">

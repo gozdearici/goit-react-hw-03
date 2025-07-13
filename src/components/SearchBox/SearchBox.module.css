@@ -1,3 +1,12 @@
 .searchContainer {
     margin-bottom: 16px;
 }
+
+.searchContainer input {
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 272px;
+    height: 30px;
+    font-size: 16px;
+    padding-left: 10px;
+}

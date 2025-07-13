@@ -1,14 +1,37 @@
 .contactFormContainer {
     display: flex;
     flex-direction: column;
+    max-width: 280px;
 }
 
 .contactFormItem {
     display: flex;
     flex-direction: column;
+    max-width: 280px;
+    max-height: 100px;
+}
+
+.contactFormItem input {
+    border: 1px solid black;
+    border-radius: 15px;
+    height: 30px;
+    font-size: 16px;
+    padding-left: 10px;
 }
 
 .submitButton {
     width: 200px;
     margin: 10px auto;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.submitButton:hover {
+    background-color: blanchedalmond;
+    border: 1px solid black;
+}
+
+.errorMessage {
+    color: red;
+    font-size: 14px;
 }
